@@ -4,11 +4,20 @@ function setup() {
 
 function draw() {
   background(244, 243, 239)
-  noStroke()
-  fill(72, 94, 108)
-  const x = mouseX >= 0 && mouseX <= width ? mouseX : width / 2
-  const y = mouseY >= 0 && mouseY <= height ? mouseY : height / 2
-  circle(x, y, 48)
+  strokeWeight(3);
+
+  circle(150, 400, 140)
+  fill(0)
+  circle(350, 400, 110)
+  fill(255)
+  circle(520, 400, 80)
+
+  line(220, 400, 295, 400)
+  line(405, 400, 480, 400)
+
+  point(150,500)
+  point(350,500)
+  point(520,500)
 }
 
 function windowResized() {
